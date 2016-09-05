@@ -1,0 +1,44 @@
+{
+  "name": "rx-bytag",
+  "version": "1.0.0",
+  "description": "RxJS operator to filter a tag using globbing syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape -r babel-register tests.js tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteinge/rx-bytag.git"
+  },
+  "keywords": [
+    "RxJS",
+    "glob",
+    "globbing"
+  ],
+  "author": "Seth House <seth@eseth.com> (http://eseth.org)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/whiteinge/rx-bytag/issues"
+  },
+  "homepage": "https://github.com/whiteinge/rx-bytag#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "~6.14.0",
+    "rx-collectionassert": "~1.0.0",
+    "tape": "~4.6.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "rules": {}
+  },
+  "private": false,
+  "dependencies": {},
+  "optionalDependencies": {}
+}
