@@ -5,6 +5,7 @@ An RxJS operator to provide very lightweight "channels".
 This wraps the Rx
 [filter](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/where.md)
 operator to perform succinct matching using light shell-style glabbing syntax.
+The whole package consists of three, small functions.
 
 This provides two things:
 
