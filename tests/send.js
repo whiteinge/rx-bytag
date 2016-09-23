@@ -8,7 +8,6 @@ test('Binding', function(assert) {
     var send = sendAction.bind(Dispatcher);
 
     var sub = Dispatcher.subscribe(function(x) {
-        console.log('x', x);
         assert.deepEqual(x, {tag: 'foo', data: {bar: 'Bar'}});
     });
 
@@ -21,7 +20,6 @@ test('Currying', function(assert) {
     var send = sendAction.bind(Dispatcher);
 
     var sub = Dispatcher.subscribe(function(x) {
-        console.log('x', x);
         assert.deepEqual(x, {tag: 'foo', data: {bar: 'Bar'}});
     });
 
