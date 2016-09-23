@@ -31,7 +31,9 @@ export function byTag(...args) {
 Convert a glob-style match to a regex
 **/
 function globStringToRegex(str) {
-    return new RegExp(`^${escapeRegExp(str).replace(/\\\*/g, '.*')}$`);
+    return new RegExp(`^${escapeRegExp(str)
+        .replace(/\\\*/g, '.*')
+        .replace(/\\\?/g, '.')}$`);
 }
 
 /**
@@ -48,7 +50,7 @@ Usage:
 **/
 export function fnmatch(match, string) {
     var testFn;
-    if (match.includes('*')) {
+    if (match.includes('*') || match.includes('?')) {
         var glob = globStringToRegex(match);
         testFn = glob.test.bind(glob);
     } else {

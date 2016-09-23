@@ -35,3 +35,8 @@ test('Subset begin-glob match incorrect.', function(assert) {
     assert.ok(fnmatch('*bar', 'foobar'));
     assert.end();
 });
+
+test('Single char match incorrect.', function(assert) {
+    assert.ok(fnmatch('foo?ar', 'foobar'));
+    assert.end();
+});
